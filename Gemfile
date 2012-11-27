@@ -68,8 +68,8 @@ platforms :jruby do
 end
 
 group :development do
-#  gem "rdoc", ">= 2.4.2"
-#  gem "yard"
+  gem "rdoc", ">= 2.4.2"
+  gem "yard"
 end
 
 group :test do
