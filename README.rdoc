@@ -3,3 +3,18 @@
 Redmine is a flexible project management web application written using Ruby on Rails framework.
 
 More details can be found in the doc directory or on the official website http://www.redmine.org
+
+This fork is tend to porting latest redmine to cloudfoundry.
+
+porting:
+1, remove vender plugin check in environment.rb
+2, remove unnecessary gem in Gemfile
+3, add database.yml
+4, rake generate_secret_token
+
+deploy to CF:
+1, bundle install 
+2, vmc push --runtime ruby19
+3, bind mysql service to app
+
+
